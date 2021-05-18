@@ -1,10 +1,10 @@
-import boto3
-
 s3_region = '' # fill in for AWS, blank for Ceph
-s3_endpoint_url = 'https://url-do-storagea.com/'
-s3_access_key_id = 'access_key'
-s3_secret_access_key = 'access_secret'
+s3_endpoint_url = 'https://s3-openshift-storage.apps.dos-cloud.lan.croz.net/'
+s3_access_key_id = 'Tx1HnuJLLX575v1CL94P'
+s3_secret_access_key = 'y/kUAStrFIX0AOAabOqTj/TBw+rQ9h9xuhb71BwD'
 s3_bucket = 'aiops-test-bucket'
+
+import boto3
 
 # configure boto S3 connection
 s3 = boto3.client('s3',
